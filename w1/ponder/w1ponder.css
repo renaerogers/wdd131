@@ -1,0 +1,49 @@
+
+body {
+    background-color: darkgrey;
+    margin: 30px 10px; 
+}
+#content {
+    max-width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 0.5fr 0.75fr 2fr 0.75fr 0.5fr; 
+    margin: 0 auto
+}
+h1 {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    grid-column: 2/5;
+    margin: 0 auto; 
+}
+h2 {
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+img {
+    width: 80%;
+    grid-column: 3/4;
+    margin: 10px auto;
+}
+#topics {
+    grid-column: 3/4;
+}
+p {
+    color: rgb(0, 145, 224);
+    font-size: 1.0em;
+    grid-column: 2/5;
+}
+li {
+    list-style-type: none;
+    font-size: 0.8em;
+    text-align: left;
+}
+hr { 
+    border: none; 
+    height: 2px;
+    background-color: rgb(0, 145, 224);
+    grid-column: 3/4;
+    width: 100%;
+}
