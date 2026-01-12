@@ -1,0 +1,34 @@
+#content { 
+    max-width: 1600px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px 20%;
+    margin: 0 auto;
+}
+#title {
+    text-align: center;
+}
+#title hr {
+    margin: 0 auto; 
+}
+#title p {
+    color: dodgerblue;
+    margin-bottom: -7px;
+}
+hr {
+    margin-bottom: 30px;
+}
+#info p:nth-of-type(2) {
+    font-style: italic;
+}
+#list {
+    margin-left: 5px;
+    margin-bottom: 40px;
+}
+li {
+    margin-bottom: 15px;
+}
+img {
+    width: 15%; 
+    display: block;
+    margin: 0 auto;
+}
