@@ -32,6 +32,9 @@
         color: black;
         display: none;
     }
+    nav.active a {
+        display: block;
+    }
     nav a:hover {
         text-decoration: none;
         color: #616061;
@@ -52,7 +55,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
     header, main, footer {
         max-width: 1200px;
         display: flex;
@@ -63,7 +66,8 @@
         justify-content: space-between;
         align-items: center;
     }
-    nav a {
+    nav a, nav.active a {
+        width: 100%;
         display: inline-block;
         text-align: right;
     }
@@ -91,6 +95,7 @@
         border: 1px solid #ccc;
     }
     nav a {
+        width: 100%;
         display: inline-block;
         text-align: right;
     }
