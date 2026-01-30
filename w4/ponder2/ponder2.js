@@ -7,7 +7,7 @@ const closeButton = modal.querySelector('.close-viewer');
 gallery.addEventListener('click', openModal);
 
 function openModal(e) {
-    if(e.target.tag != 'IMG') {
+    if(e.target.tagName != 'IMG') {
         console.log("SKIP");
         return;
     } else {
