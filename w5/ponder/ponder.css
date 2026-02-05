@@ -52,6 +52,49 @@ header, footer {
 }
 
 @media (min-width: 600px) {
-    
+    .movie {
+        display: grid;
+        grid-template-areas: "img title"
+                             "img release"
+                             "img age"
+                             "img genre"
+                             "img rating"
+                             "desc desc";
+        gap: 20px;
+    }
+    .movie img {
+        grid-area: img;
+    }
+    .movie h2 {
+        grid-area: title;
+        text-align: center;
+    }
+    .movie p:nth-child(1) {
+        grid-area: release;
+    }
+    .movie p:nth-child(2) {
+        grid-area: age;
+    }
+    .movie p:nth-child(3) {
+        grid-area: genre;
+    }
+    .movie p:nth-child(4) {
+        grid-area: rating;
+    }
+    #desc {
+        grid-area: desc;
+    }
+    .main-nav {
+        display: grid;
+        grid-template-areas: "space space home about contact space2 space2";
+    }
+    .main-nav li:nth-child(1) {
+        grid-area: home;
+    }
+    .main-nav li:nth-child(2) {
+        grid-area: about;
+    }
+    .main-nav li:nth-child(3) {
+        grid-area: contact;
+    }
 }
-          
