@@ -1,0 +1,50 @@
+header { 
+    width: 100%;
+    background-color: rgb(255, 178, 63);
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(56, 2, 27);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+#content {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 211, 108);
+    font-size: 1.5rem;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+}
+ul {
+  column-count: 1;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(255, 178, 63);
+    text-align: center;
+    color: rgb(56, 2, 27);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+    ul {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    ul {
+        column-count: 3;
+    }
+}
