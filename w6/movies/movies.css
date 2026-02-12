@@ -98,7 +98,7 @@ header, footer {
         grid-area: contact;
     }
 }
-
+ 
 @media screen and (min-width: 1000px) {
     .movie {
         display: grid;
