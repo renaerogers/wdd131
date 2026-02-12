@@ -33,6 +33,17 @@ words.forEach((word) => {
     fruitList.appendChild(li);
 });
 
+const companies = ['Sonic', 'Wendys', 'McDonalds', 'Walmart', 'Costco', 'Target', 'Best Buy', 'Amazon', 'Apple', 'Microsoft'];
+
+const list = document.querySelector('#company-list');
+
+let htmlString = '';
+companies.forEach((company) => {
+    const li = document.createElement('li');
+    li.textContent = company;
+    list.appendChild(li);
+});
+
 const students = [
     {last: 'Andrus', first: 'Aaron', grade: 'A'},
     {last: 'Masa', first:'Manny', grade: 'B'},
