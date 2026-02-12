@@ -63,7 +63,7 @@ const movies = [
             <p><strong>Release Date:</strong> ${movie.date}</p>
             <p><strong>Recommended Age:</strong> ${movie.ages}</p>
             <p><strong>Genre:</strong> ${movie.genre}</p>
-            <p><strong>Rating:</strong> <span aria-label="${movie.stars} out of 5 stars">${movie.stars}</span></p>
+            <p><strong>Rating:</strong> <span aria-label="${movie.stars.length} out of 5 stars">${movie.stars}</span></p>
             <p id='desc'>${movie.description}</p>
         `;
 
@@ -71,12 +71,12 @@ const movies = [
     });
 
 
-    const spans = document.querySelectorAll('article.movie p span');
+    // const spans = document.querySelectorAll('article.movie p span');
 
-    function addStars(span) {
-        const stars = span.innerText.length;
-        span.setAttribute('aria-label', `${stars} out of 5 stars`);
-    }
-    for(let i = 0; i < spans.length; i++) {
-    addStars(spans[i]);
-}
+    // function addStars(span) {
+    //     const stars = span.innerText.length;
+    //     span.setAttribute('aria-label', `${stars} out of 5 stars`);
+    // }
+    // for(let i = 0; i < spans.length; i++) {
+    // addStars(spans[i]);
+    // }
