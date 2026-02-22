@@ -39,13 +39,13 @@
                     <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
                 </div>
             </div>
-            <div id="creditCardSecurityCodeContainer" class="cardBack" role="region" aria-labelledby="creditCardLabel">
-                <hr></hr>
-                <label id="creditCardLabel" for="creditCardNumber">CVC/CVV</label>
+            <div id="creditCardSecurityCodeContainer" class="cardBack" role="region" aria-labelledby="creditCardSecurityCode">
+                <div id="cardMagstripe" aria-labelledby="cardMagstripe"></div>
+                <label id="creditCardSecurityCode" for="creditCardSecurityCode">CVC/CVV</label>
                 <input
                 type="text"
-                id="cvc/cvv"
-                name="cvc/cvv"
+                id="cvcCvv"
+                name="cvcCvv"
                 pattern="[0-9]{3}"
                 placeholder="xxx"
                 required
