@@ -2,7 +2,8 @@
     const theForm = document.querySelector('#checkoutForm');
     const creditInput = document.querySelector('#creditCardNumberContainer input');
     let paymentSelect = 'creditCard';
-//validations and errors
+
+    //validations and errors
 
 function displayError(msg) {
 	// display error message
@@ -45,8 +46,8 @@ function submitHandler(event) {
     const cvc = document.querySelector('#cvcCvv').value.trim();
     if (!/^\d{3}$/.test(cvc)) {
         errorMsg += 'CVC/CVV must be 3 digits\n';
-    }
   }
+}
 
     if (errorMsg !== '') {
 		// there was an error. stop the form and display the errors.
