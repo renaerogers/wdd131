@@ -49,17 +49,19 @@ const recipeList = document.getElementsByClassName('recipes');
 
 function recipeTemplate(recipe) {
     return `
-        <section class="recipe-item">
+        <article class="recipe-card">
+            <img src="images/images/${recipe.name.toLowerCase().replace(/\s/g, '-')}.jpg" alt="${recipe.name}">
+            <p class="food-category">${recipe.tag}</p>
             <h3 class="recipe-name">${recipe.name}</h3>
             <p class="recipe-rating" aria-label="Rating: ${recipe.rating} out of 5 stars">${'⭐'.repeat(recipe.rating)}${'☆'.repeat(5 - recipe.rating)}</p>
             <p class="recipe-desc">${recipe.description}</p>
-        </section>
+        </article>
     `;
 }
 
 recipes.forEach(recipe => {
-    const recipeItem = document.createElement('section');
-    recipeItem.classList.add('recipe-item');
+    const recipeItem = document.createElement('article');
+    recipeItem.classList.add('recipe-card');
     recipeItem.innerHTML = recipeTemplate(recipe);
     recipeList.appendChild(recipeItem);
 }); 

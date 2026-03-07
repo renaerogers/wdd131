@@ -25,13 +25,12 @@
                 
     <title>Recipe Book</title>
     <link rel="stylesheet" href="prove.css">
-    <script src="prove.js" defer></script>
 </head>
 <body>
     <header>
         <img class="logo" src="images/images/recipe-book.png" alt="recipe book logo">
-        <h1>Recipe Book</h1>
-        <form action="/search-results" method="get">
+        <h1>RecipeBook</h1>
+        <form id="search-form" action="/search-results" method="get">
             <input type="search" id="search-recipe" name="q" placeholder="Find a recipe..." aria-label="Search for a recipe">
             <button type="submit">Search</button>
         </form>
@@ -41,30 +40,30 @@
             <section class="recipes">
                 <article class="recipe-card">
                     <img src="images/images/apple-crisp.jpg" alt="Apple Crisp">
-                    <p class="food-category">dessert</p>
-                    <h3>Apple Crisp</h3>
-                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>   
-                    <p class="recipe-desc">This apple crips recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+                    <div class="recipe-info">
+                        <p class="food-category">dessert</p>
+                        <h3>Apple Crisp</h3>
+                        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star-empty">☆</span>
+                        </span>   
+                        <p class="recipe-desc">This apple crips recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+                    </div>
                 </article>
             </section>
-        </div>
-        
-    </main>
-          
+        </div> 
+    </main>   
+    <footer> 
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>                          
+        <a id="flaticon-link" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>                                  
+    </footer>  
 </body>
-<footer> 
-    <div class="social">
-        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-        <a href="#"><img src="images/images/instagram_icon.svg" alt="instagram icon"></a>
-        <a href="#"><img src="images/images/youtube_icon.svg" alt="youtube icon"></a>
-        <a href="#"><img src="images/images/pinterest_icon.svg" alt="pinterest icon"></a>
-    </div>                          
-    <a id="flaticon-link" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>                                  
-</footer>
 </html>
