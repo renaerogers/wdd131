@@ -111,7 +111,8 @@ let button = document.querySelector('button');
 
 button.addEventListener('click', search);
 
-/* for the enter key to work on search - not just clicking the search button */
+// add event listener to input field to listen for 'Enter' key press
+input = document.querySelector('input'); 
 input.addEventListener('keypress', handleEnter);
 function handleEnter(event) {
   if (event.key === 'Enter') {

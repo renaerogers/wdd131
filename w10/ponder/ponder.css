@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(249, 228, 202);
+    color: rgb(0, 0, 0);
+}
+
+#hike-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+.hike-card {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    background-color: rgb(246, 209, 161);
+    border: 1px solid brown;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+button {
+    background-color: rgb(139, 33, 33);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#search-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        padding: 0px 2.5%;
+    }
+    .hike-card {
+        width: 35%;
+    }
+}
+@media screen and (min-width: 900px) {
+    body {
+        padding: 0px 7.5%;
+    }
+    .hike-card {
+        width: 25%;
+    }
+}
