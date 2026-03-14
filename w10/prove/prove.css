@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Momo+Signature&family=Pacifico&display=swap');
+
+body {
+    background-color: #fff1e4;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header h1 {
+    font-family: 'Amatic SC', cursive, sans-serif;
+    font-size: 4rem;
+    margin: 0 10px;
+    padding: 20px 0;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+#search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.recipe-card {
+    background-color: #fff9f4;
+    border: 2px solid #d4b496;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+.food-category {
+    background-color: #fff9f4;
+    border: 2px solid #d4b496;
+    color: #674526;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.recipe-card h3 {
+    font-family: 'Amatic SC', cursive, sans-serif;
+    font-size: 2.0rem;
+    color: #007abc;
+    margin: 0 0;
+    margin-top: 20px;
+}
+.recipe-desc {
+    display: none;
+}
+.rating {
+    font-size: 1.25rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+.social {
+    width: 100%;
+    height: 50px;
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto;
+    margin-top: 5px;
+}
+.social img {
+    width: 50px;
+    height: 50px;
+}
+#flaticon-link {
+    color: #007abc;
+    margin: 50px auto;
+}
+
+@media screen and (min-width: 600px) {
+    /* The image should be to the left with the rest of the information (category, title, rating, description) to the right of the image. */
+    
+    .recipe-card {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        gap: 20px;
+        max-width: 800px;
+        padding: 10px;
+        margin: 20px auto;
+    }
+    .recipe-card img {
+        width: 40%;
+        height: auto;
+        border-radius: 4px;
+    }
+    .food-category {
+        margin-top: 0px;
+    }
+    .recipe-desc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
+    .recipe-card {
+        width: 80%;
+        max-width: 1200px;
+    }
+    .recipe-info h1 {
+        font-size: 1.5em;
+    }
+    .recipe-card img {
+        width: 50%;
+        max-width: 500px;
+    }
+    .recipe-desc {
+        font-size: 1.1em;
+    }
+}
