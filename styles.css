@@ -1,0 +1,111 @@
+a {
+    width: 50px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    margin: 10px;
+    padding: 10px;
+}
+
+a:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+a:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 55% 0 auto;
+}
+a:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 65% 0 auto;
+}
+a:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 75% 0 auto;
+}
+a:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 65% 0 auto;
+}
+a:nth-child(6) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 55% 0 auto;
+}
+a:nth-child(7) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 45% 0 auto;
+}
+a:nth-child(8) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 35% 0 auto;
+}
+a:nth-child(9) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 25% 0 auto;
+}
+a:nth-child(10) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 35% 0 auto;
+}
+a:nth-child(11) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 45% 0 auto;
+}
+a:nth-child(12) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 55% 0 auto;
+}
+a:nth-child(13) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 65% 0 auto;
+}
+a:nth-child(14) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 75% 0 auto;
+}
+a:nth-child(15) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 65% 0 auto;
+}
+a:nth-child(16) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 55% 0 auto;
+}
+a:nth-child(17) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 45% 0 auto;
+}
+a:nth-child(18) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 35% 0 auto;
+}
+a:nth-child(19) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 25% 0 auto;
+}
+a:nth-child(20) {
+    display: flex;
+    justify-content: center;
+    margin: 10px 35% 0 auto;
+}
