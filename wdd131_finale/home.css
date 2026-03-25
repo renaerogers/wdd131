@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FF9797;
+    color: #303448;
+}
+
+body {
+    --primary-color: #FF9797;
+    --secondary-color: #FFC57B;
+    --accent1-color: #FF5B09;
+    --accent2-color: #303448;
+}
+header {
+    padding-top: 20px;
+    text-align: center;
+}
+#kittys-logo{
+    width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* nav {
+    background-color: #FFC57B;
+    padding: 10px 0;
+}
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+nav li {
+    display: flex;
+}
+nav a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #FF5B09;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #FF5B09;
+    color: #FFFFFF;
+} */
+footer {
+    background-color: #FFC57B;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+nav {
+  background-color: #FFC57B;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
