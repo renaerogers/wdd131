@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourdough Order Form</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header> 
+        <div class="header-content"> 
+            <img id="kittys-logo" src="images/kittys-crumb-corner-logo.png" alt="Kitty's Crumb Corner Logo">
+            <h1>Kitty's Crumb Corner</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sourdough.html">Sourdough Bread</a>
+            <a href="baking.html">Baking Gallery</a>
+            <a href="order.html">Order Form</a>
+        </nav>
+    </header> 
+    <main> 
+        <div class="title">
+            <h1 id="form-title">Sourdough Order Form</h1>
+        </div>
+        <div class="order-content">
+            <div class="order-image">
+                <img id="order-img" src="images/pretty-sourdough-design.jpg" alt="Order Form Sourdough Sample">
+            </div>
+            <div class="order-form">
+                <form id="checkoutForm" action="completed.html" method="get">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                    <label for="paymentMethod">Payment Method:</label>
+                    <select id="paymentMethod" name="paymentMethod" required aria-expanded="false" aria-controls="creditCardnumberContainer paypalUsernameContainer">
+                        <option value="">Select Payment Method</option>
+                        <option value="card">Cash</option>
+                        <option value="check">Check</option>
+                        <option value="venmo">Venmo</option>
+                    </select>
+
+                    <!-- Container for credit card details -->
+                    <p id="creditCardNumberContainer" class="hide" role="region" aria-labelledby="creditCardLabel">
+                        <label id="creditCardLabel" for="creditCardNumber">Credit Card Number:</label>
+                        <input
+                        type="text"
+                        id="creditCardNumber"
+                        name="creditCardNumber"
+                        pattern="[0-9]{16}"
+                        placeholder="Enter 16 digits"
+                        required
+                        />
+                        <label for="expirationDate">Expiration</label>
+                        <input 
+                        type="text" 
+                        id="month" 
+                        name="expMonth" 
+                        placeholder="MM" 
+                        aria-labelledby="expirationDate">
+                        <input 
+                        type="text" 
+                        id="year" 
+                        name="expYear" 
+                        placeholder="YY" 
+                        aria-labelledby="expirationDate">
+                    </p>
+                
+                    <!-- Container for Venmo details -->
+                    <p id="venmoUsernameContainer" class="hide" role="region" aria-labelledby="venmolLabel">
+                        <label id="venmoLabel" for="venmoUsername">Venmo Username:</label>
+                        <input
+                        type="text"
+                        id="venmoUsername"
+                        name="venmoUsername"
+                        placeholder="Enter Venmo username"
+                        required
+                        />
+                    </p>
+
+                    <button type="submit">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer> 
+        <p>Copyright 2026 Kitty's Crumb Corner</p>
+    </footer>
+</body>
+</html>
