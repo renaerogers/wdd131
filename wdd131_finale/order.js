@@ -43,12 +43,12 @@ function estimatedCost() {
     
     let pricePerItem = 0;
     
-    if (itemSelect.value === 'loaf') {
+    if (itemSelect.value === 'halfLoaf') {
         pricePerItem = 8.00;
-    } else if (itemSelect.value === 'halfLoaf') {
-        pricePerItem = 4.50;
+    } else if (itemSelect.value === 'loaf') {
+        pricePerItem = 12.00;
     } else if (itemSelect.value === 'focaccia') {
-        pricePerItem = 10.00;
+        pricePerItem = 16.00;
     }
     
     const quantity = parseInt(quantitySelect.value);
@@ -108,7 +108,7 @@ function submitHandler(event) {
         theForm.innerHTML = `
             <div style="text-align: center; padding: 20px; color: #303448;">
                 <h2>Order Sent!</h2>
-                <p>Thank you, ${formData.get('fullName')} for your order! >We will contact you through your email to confirm your order and provide updates on the expected delivery date.</p>
+                <p>Thank you, ${formData.get('fullName')} for your order! We will contact you through your email to confirm your order and provide updates on the expected delivery date.</p>
             </div>
         `;
     })

@@ -56,35 +56,20 @@ nav a:hover {
     background-color: var(--primary-color);
 }
 
-/* nav {
-    background-color: #FFC57B;
-    padding: 10px 0;
+#sourdough-pic {
+    width: 40%;
 }
-nav ul {
-    width: 100%;
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
+.sourdough-gallery {
+    color: var(--accent2-color);
 }
-nav li {
-    display: flex;
+.sourdough-gallery h2 {
+    font-family: 'Momo Signature', cursive;
 }
-nav a {
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    color: #FF5B09;
-    padding: 10px 20px;
-    border-radius: 5px;
+.sourdough-gallery p {
+    font-family: 'Lato', Arial, sans-serif;
 }
-nav a:hover {
-    background-color: #FF5B09;
-    color: #FFFFFF;
-} */
+
+
 footer {
     background-color: #FFC57B;
     text-align: center;
