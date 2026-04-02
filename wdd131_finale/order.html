@@ -32,71 +32,75 @@
                 <img id="order-img" src="images/pretty-sourdough-design.jpg" alt="Order Form Sourdough Sample">
             </div>
             <div class="order-form">
-                <form id="checkoutForm" action="completed.html" method="get">
-                    <label for="itemSelection">Sourdough Order:</label>
-                    <select id="itemSelection" name="itemSelection" required aria-expanded="false">
-                        <option value="">Select Sourdough</option>
-                        <option value="loaf">Full Loaf</option>
-                        <option value="halfLoaf">Half Loaf</option>
-                        <option value="focaccia">Focaccia Pan</option>
-                    </select>
-                    <label for="quantity">Quantity:</label>
-                    <select id="quantity" name="quantity" required aria-expanded="false">
-                        <option value="">Select Quantity</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Sally Sue" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="email@email.com" required>
-                    <label for="address">Address:</label>
-                    <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
-                    <label for="paymentMethod">Payment Method:</label>
-                    <select id="paymentMethod" name="paymentMethod" required aria-expanded="false" aria-controls="cashReceiptContainer checkReceiptContainer venmoUsernameContainer">
-                        <option value="">Select Payment Method</option>
-                        <option value="card">Cash</option>
-                        <option value="check">Check</option>
-                        <option value="venmo">Venmo</option>
-                    </select>
+                <form id="checkoutForm" class="order-form" action="completed.html" method="get">
+                    <div class="grid-item-selection">
+                        <label for="itemSelection">Sourdough Order:</label>
+                        <select id="itemSelection" name="itemSelection" required aria-expanded="false">
+                            <option value="">Select Sourdough</option>
+                            <option value="loaf">Full Loaf ($8.00 /ea)</option>
+                            <option value="halfLoaf">Half Loaf ($4.50 /ea)</option>
+                            <option value="focaccia">Focaccia Pan ($10.00 /ea)</option>
+                        </select>
+                    </div>
 
-                    <label for="notes">Notes:</label>
-                    <textarea id="notes" name="notes" rows="8" placeholder="Enter extra notes or suggestions such as sourdough design preferences..."></textarea>
+                    <div class="grid-quantity">
+                        <label for="quantity">Quantity:</label>
+                        <select id="quantity" name="quantity" required aria-expanded="false">
+                            <option value="">Select Quantity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
 
-                    <!-- Container for cash details -->
-                    <p id="cashReceiptContainer" class="hide" role="region" aria-labelledby="cashLabel">
-                        <label id="cashLabel" for="cashNumber">Cash Information Required:</label>
-                        <p>
+                    <div class="grid-name">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Sally Sue" required>
+                    </div>
+
+                    <div class="grid-email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                    </div>
+
+                    <div class="grid-address">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="2" placeholder="Enter your address" required></textarea>
+                    </div>
+
+                    <div class="grid-payment">
+                        <label for="paymentMethod">Payment Method:</label>
+                        <select id="paymentMethod" name="paymentMethod" required aria-expanded="false" aria-controls="cashReceiptContainer checkReceiptContainer venmoUsernameContainer">
+                            <option value="">Select Payment Method</option>
+                            <option value="cash">Cash</option>
+                            <option value="check">Check</option>
+                            <option value="venmo">Venmo</option>
+                        </select>
+                    </div>
+
+                    <div class="grid-notes">
+                        <label for="notes">Notes:</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Enter extra notes or suggestions such as sourdough design preferences..."></textarea>
+                    </div>
+
+                    <div class="grid-details">
+                        <div id="cashReceiptContainer" class="hide" role="region" aria-labelledby="cashLabel">
                             * Please ensure that you have the amount ready confirmed in your order confirmation email.
-                        </p>
-                    </p>
-
-                    <!-- Container for check details -->
-                    <p id="checkReceiptContainer" class="hide" role="region" aria-labelledby="checkLabel">
-                        <label id="checkLabel" for="checkNumber">Check Information Required:</label>
-                        <p>
+                        </div>
+                        <div id="checkReceiptContainer" class="hide" role="region" aria-labelledby="checkLabel">
                             * Please include a photo of the check receipt with your order confirmation email.
-                        </p>
-                    </p>
-                
-                    <!-- Container for Venmo details -->
-                    <p id="venmoUsernameContainer" class="hide" role="region" aria-labelledby="venmolLabel">
-                        <label id="venmoLabel" for="venmoUsername">Venmo Username:</label>
-                        <input
-                        type="text"
-                        id="venmoUsername"
-                        name="venmoUsername"
-                        placeholder="Enter Venmo username"
-                        required
-                        />
-                    </p>
+                        </div>
+                        <div id="venmoUsernameContainer" class="hide" role="region" aria-labelledby="venmoLabel">
+                            <label for="venmoUsername">Venmo Username:</label>
+                            <input type="text" id="venmoUsername" name="venmoUsername" placeholder="Enter username...">
+                        </div>
+                    </div>
 
-                    <div class="estimated-cost">
+                    <div class="estimated-cost grid-cost">
                         <p>Estimated Cost: $0.00</p>
                     </div>
 
-                    <button type="submit">Submit Order</button>
+                    <button type="submit" class="grid-submit">Submit Order</button>
                 </form>
             </div>
         </div>

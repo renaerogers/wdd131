@@ -1,4 +1,4 @@
-
+                                                                                                                                 
     const theForm = document.querySelector('#checkoutForm');
     const paymentSelect = document.querySelector('#paymentMethod');
     const creditCardContainer = document.querySelector('#creditCardNumberContainer');
