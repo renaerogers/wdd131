@@ -71,17 +71,54 @@ function displayError(msg) {
     if (errorEl) errorEl.textContent = msg;
 }
 
+// function submitHandler(event) {
+// 	event.preventDefault();
+//   let errorMsg = '';
+// 	displayError('');
+//     if (paymentSelect.value !== '') {
+//         // Show confirmation message
+//         theForm.innerHTML = '<h2>Thank you for your purchase!</h2><p>We will contact you through your email to confirm your order and provide updates on the expected delivery date.</p>';
+//     } else {
+//         errorMsg = 'Please select a valid payment method.';
+//         displayError(errorMsg);
+//     }
+// }
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxA1sgrKhvpiLgPpYF0fHuJ1TY8mGOBCW81JHopa3cBnzMHT6pkOxIIjrzDZzBgdeYC/exec'; // <-- Paste your URL here
+
 function submitHandler(event) {
-	event.preventDefault();
-  let errorMsg = '';
-	displayError('');
-    if (paymentSelect.value !== '') {
-        // Show confirmation message
-        theForm.innerHTML = '<h2>Thank you for your purchase!</h2><p>We will contact you through your email to confirm your order and provide updates on the expected delivery date.</p>';
-    } else {
-        errorMsg = 'Please select a valid payment method.';
-        displayError(errorMsg);
-    }
+    event.preventDefault();
+    displayError('');
+    
+    // Show a loading state on the button
+    const submitBtn = theForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.textContent;
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    // Grab all form data automatically
+    const formData = new FormData(theForm);
+
+    fetch(scriptURL, { 
+        method: 'POST', 
+        body: formData
+    })
+    .then(response => {
+        // Success: Show the thank you message
+        theForm.innerHTML = `
+            <div style="text-align: center; padding: 20px; color: #303448;">
+                <h2>Order Sent!</h2>
+                <p>Thank you, ${formData.get('fullName')} for your order! >We will contact you through your email to confirm your order and provide updates on the expected delivery date.</p>
+            </div>
+        `;
+    })
+    .catch(error => {
+        // Error: Re-enable button and show error
+        submitBtn.textContent = originalBtnText;
+        submitBtn.disabled = false;
+        displayError('There was an error submitting your order. Please try again.');
+        console.error('Error!', error.message);
+    });
 }
   
 theForm.addEventListener('submit', submitHandler);
