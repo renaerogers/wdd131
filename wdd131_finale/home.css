@@ -57,18 +57,45 @@ nav a:hover {
 }
 
 #sourdough-pic {
-    width: 40%;
+    width: 60%;
+    border: 10px solid #303448;
 }
 .sourdough-gallery {
-    color: var(--accent2-color);
+    width: 80%;
+    text-align: center;
+    color: #303448;
+    background-color: #ffbcbc;
+    padding: 20px;
+    margin: 30px auto;
 }
-.sourdough-gallery h2 {
+.sourdough-gallery h2, .sourdough-gallery h3 {
     font-family: 'Momo Signature', cursive;
 }
 .sourdough-gallery p {
     font-family: 'Lato', Arial, sans-serif;
 }
+#gallery-info {
+    margin: 20px;
+}
 
+#cinnamon-bread-pic {
+    width: 60%;
+    border: 10px solid #303448;
+}
+.baking-gallery {
+    width: 80%;
+    text-align: center;
+    color: #303448;
+    background-color: #ffdcaf;
+    padding: 20px;
+    margin: 30px auto;
+}
+.baking-gallery h2, .baking-gallery h3 {
+    font-family: 'Momo Signature', cursive;
+}
+.baking-gallery p {
+    font-family: 'Lato', Arial, sans-serif;
+}
 
 footer {
     background-color: #FFC57B;
@@ -98,5 +125,32 @@ footer {
     }
     nav a {
         width: 20%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .sourdough-gallery {
+        display: grid; 
+        grid-template-columns: 1fr 1.5fr;
+        align-content: center;
+    }
+    #sourdough-pic {
+        width: 90%;
+        grid-column: 1/2;
+        align-self: center;
+    }
+    #gallery-info {
+        width: 90%; 
+        grid-column: 2/3;
+        margin: 20px;
+    }
+    .baking-gallery {
+        display: grid; 
+        grid-template-columns: 1fr 1.5fr;
+        align-content: center;
+    }
+    #cinnamon-bread-pic {
+        width: 90%;
+        grid-column: 1/2;
+        align-self: center;
     }
 }
