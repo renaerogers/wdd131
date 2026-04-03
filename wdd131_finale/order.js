@@ -84,7 +84,7 @@ function displayError(msg) {
 //     }
 // }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyQzUKAeWDE1AiQ0pvH7vaHm1JJFxP6BIjGOS6Wimm-hQQhlI_OLMYz88B7eUMAR4Lq/exec'; // <-- Paste your URL here
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwL5x5fJHCUsLWAkNzp3N3XAiUdfFI4Z9uvdh4JLlt8pKVvF5YBRf5zmpz_oTduQXUX/exec'; // <-- Paste your URL here
 
 function submitHandler(event) {
     event.preventDefault();
@@ -120,6 +120,5 @@ function submitHandler(event) {
         console.error('Error!', error.message);
     });
 }
-  
-theForm.addEventListener('submit', submitHandler);
 
+theForm.addEventListener('submit', submitHandler);
