@@ -84,7 +84,7 @@ function displayError(msg) {
 //     }
 // }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxA1sgrKhvpiLgPpYF0fHuJ1TY8mGOBCW81JHopa3cBnzMHT6pkOxIIjrzDZzBgdeYC/exec'; // <-- Paste your URL here
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz_awI_fVtp_FyRBAroJM_6nC31MFTC-X5jG2xP8lkIqk_UXX8HeR57ObTrXbLG9To0/exec'; // <-- Paste your URL here
 
 function submitHandler(event) {
     event.preventDefault();
