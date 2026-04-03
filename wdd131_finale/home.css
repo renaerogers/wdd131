@@ -31,6 +31,9 @@ header h1 {
     font-family: 'Momo Signature', cursive;
     color: white;
 }
+a {
+    text-decoration: none;
+}
 nav {
     background-color: #FFC57B;
     line-height: 3em;
